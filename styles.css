@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: "Roboto", sans-serif;
+}
+body{
+     height: 900vh
+}
+
+header{
+    /* border: 2px solid; */
+    position: fixed;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.genLayout{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.topnav,
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topnavlinks{
+    display: flex;
+    gap: 1rem;
+    padding-block: .3rem;
+}
+
+.topnavlinks > a{
+    color: #555;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 12.8px;
+    padding: 8px 6.4px;
+}
+.topnavlinks > a:last-child{
+    color: #ee7e01;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.country{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-transform: capitalize;
+    font-weight: 200;
+    color: #555;
+}
+nav{
+    background-color: #fff;
+    /* padding-block: .6rem; */
+}
+.navitems > a{
+    color:#555;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 12.8px;
+    padding: 8px 6.4px;
+}
+.login{
+    display: flex;
+    background-color: #f1f1f1;
+}
+.search-input-wrapper{
+    padding-inline: .4rem;
+}
+.search-input-wrapper > input{
+      padding: .9rem .4rem;
+      border: none;
+      outline: none;
+      background-color: transparent;
+}
+.search-input-wrapper > input::placeholder{
+    text-transform: capitalize;
+}
+.search-input-wrapper > i{
+    font-size: 13px;
+}
+.login > button{
+background-color: #ee7e01;
+text-transform: capitalize; color: #fff;
+padding-left: 18px;
+}
+i > .fa fa-lock{
+    color: black;
+}
+
+.secone{
+    background-image: url("image/Customer-Support.png");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 10rem;
+}
+
+.hero{
+    width: 950px;
+    margin: auto;
+}
+.hero > h1{
+    color: #ee7e01;
+    font-size: 3rem;
+}
+
+.hero > p{
+    color: #014086;
+    font-size: 48px;
+    font-weight: bold;
+}
+.hero > h6{
+    font-size: 1rem;
+    font-weight: 400;
+}
+/* styling section 2 */
+.sectwo{
+    background-color: #f4f2f2;
+    padding-block: 2rem;
+}
+.bankingservices > h1{
+    color: #007168;
+    font-weight: 300;
+    font-size: 32px;
+    text-align: center;
+}
+
+.bankingservices > h1 > span{
+    font-weight: 700;
+}
+.bankingservices > p {
+    font-size: 1rem;
+    margin-block: 0.6rem;
+    text-align: center;
+}
+.servicesgrid{
+    max-width: 950px;
+    margin: auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.servicegridcard{
+    height: 60vh;
+    /* width: 35%; */
+    background-image: url(image/banner-3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items:end;
+    justify-content: center;
+    padding: 0 1rem 1rem;
+}
+
+.cardcontent{
+    background: radial-gradient(97.57% 210.75% at 0.9% 2.98%,
+    #ffffff 0%,
+    rgba( 255, 255, 255, 0.6) 100%
+    );
+    backdrop-filter: blur(20px);
+    padding: 1rem;
+    height: 15vh;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.cardcontent:hover{
+    height: 40vh;
+}
+.cardcontent > img{
+    width: 40px;
+}
+.cardcontent > h2{
+    font-size: 19.2px;
+    color: #007168;
+    text-transform: capitalize;
+    margin-block: .5rem;
+}
+.cardcontent > button{
+    border: 2px solid;
+    padding: 0.6rem 1rem;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.cardcontent > button:hover{
+    color: #fff;
+    background-color: #000;
+}
+.cardtwo{
+    background-image: url(image/901-banking-1.png);
+}
+.cardtwo > .cardcontent > h2{
+   padding-bottom: -67px;
+}
+.cardtwo > .cardcontent > img{
+    width: 40px;
+}
+.cardthree > .cardcontent > img{
+    width: 40px;
+}
+.cardthree{
+    background-image: url(image/t-bills.png);
+}
+.cardfour{
+    background-image: url(image/901-banking.png);
+}
+.cardfour > .cardcontent > img{
+    width: 40px;
+}
+.cardfive > .cardcontent > img{
+    width: 40px;
+}
+.cardsix > .cardcontent > img{
+  width: 40px;
+}
+.cardfive{
+    background-image: url(image/early-savers_1.png);
+}
+.cardsix{
+    background-image: url(image/901-banking.png);
+}
+.onestep{
+    display: flex
+}
+   
+.closa{
+    height: 75.8vh;
+   flex: 50%;
+  color: #fff;
+    background-color: #a4c519;
+    padding: 4rem 8rem 0;
+}
+
+.pic > img{
+    flex: 50%;
+    width: 100%;
+    height: 75vh;
+}
+#black{ color: #000;
+font-size: 24.3px;
+}
+.closa > h2{
+    font-size: 48px;
+}
+.closa > h4{
+    font-size: 25.6px;
+}
+.closa > p{
+    font-size: 17.6px;
+}
+.closa > button{
+     border: 2px solid;
+    padding: 0.6rem 1rem;
+    background-color: #a4c519;
+    margin-top: 10px;
+    transform: skew(1deg);
+}
+.closa > button:hover{
+         color: #fff;
+         border: #000;
+         background-color: #000;
+}
+.orangeline{
+    padding-right:.7rem;
+    background-color: #ee7e01;
+     transform:(-20deg);
+}
+.x{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 32px;
+    color: #014086;
+}
+.x > span{
+    font-size: 32px;
+    font-weight: 700;
+}
+#whether{
+    text-align: center;
+}
+.secondgrid{
+    max-width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+.financing{
+     height: 60vh;
+    /* width: 35%; */ 
+    background-image: url(image/financing.png);
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 1rem 1rem ;
+}
+.secondorangeline{
+   height: 35vh;
+   padding-right: .4rem;
+   background-color: #ee7e01;
+   padding: 0rem 5rem 0 -1rem;
+   transform: skew(-2deg);
+   
+}
+.bluespace{
+    height: 35vh;
+    background-color: #014086;
+    text-align: left;
+    padding: 1rem 1rem 0 1rem;
+    margin: 15rem 0 0 -1rem;
+}
+    #firstbutton{
+   border: 2px solid;
+   color: #fff;
+    padding: 0.6rem 1rem;
+    background-color: #014086;
+    margin-top: 10px;
+    border: white transparent;
+}
+    #secondgridbutton{
+   border: 2px solid;
+   color: #fff;
+    padding: 0.6rem 1rem;
+    background-color: #014086;
+    margin-top: 10px;
+    border: white transparent;
+}
+    #secondgridbutton{
+   border: 2px solid;
+   color: #fff;
+    padding: 0.6rem 1rem;
+    background-color: #014086;
+    margin-top: 10px;
+    border: white transparent;
+}
+
+.sustainable{
+     height: 60vh;
+    /* width: 35%; */ 
+    background-image: url(image/sustainable-banking.png);
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 1rem 1rem ;
+}
+
+.equipping{
+     height: 60vh;
+    /* width: 35%; */ 
+    background-image: url(image/equipping-growing-businesses.png);
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 1rem 1rem ;
+}
+ h3{
+     font-weight: 600;
+     color: white;
+}
+#white{
+    color: #fff;
+    font-weight: 400;
+}
+#secondgridbutton:hover{
+    color: #000;
+    background-color: #fff;
+    border: #fff;
+}
