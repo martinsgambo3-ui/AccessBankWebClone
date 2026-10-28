@@ -57,6 +57,12 @@ nav {
   background-color: #fff;
   /* padding-block: .6rem; */
 }
+
+.navitems{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 .navitems > a {
   color: #555;
   text-transform: capitalize;
@@ -429,7 +435,7 @@ footer {
 .multicolouredline {
   height: 6px;
   margin-top: 10rem;
-  width: 98.8vw;
+  width: 100%;
   z-index: 3;
   background: linear-gradient(
     to right,
@@ -687,7 +693,7 @@ footer {
 .hamburger {
   display: none;
 }
-#switch {
+#switch, .ham {
   display: none;
 }
 
@@ -698,13 +704,40 @@ footer {
   }
   .navright {
     display: none;
+    height: 65vh;
+    width: 350px;
+    background-color: #000;
+    opacity: .7;
+    padding: 2rem;
+    position: absolute;
+    top: 4.6rem;
+    right: .5rem;
+  }
+  .navitems{
+    /* align-items: start; */
+    flex-direction: column;
+    
+  }
+  .navitems > a{
+    font-size: 14px;
+    border-bottom: 2px solid #fff;
+    color: white;
+  }
+  #toggle:checked + .navright{
+    display: block;
   }
   .accesslogo {
     margin-left: 0!important;
   }
+  .ham{
+    display: block;
+    font-size: 1.5rem;
+  }
   .hamburger {
     display: block;
     font-size: 1.5rem;
+    position: absolute;
+    right: 0;
   }
   .topleftlink {
     display: none;
@@ -788,6 +821,7 @@ footer {
     border-bottom: 2px solid #fff;
     border-radius: 2rem;
   }
+  .footercard > h2{ margin-top: 3rem;}
   
    .footercard{
         padding-bottom: 2rem;
